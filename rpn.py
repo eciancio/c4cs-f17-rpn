@@ -1,20 +1,23 @@
+import operator
+
+ops = {
+        '+': operator.add,
+        '-': operator.sub
+    }
+
 def calculate(string):
     stack = list()
     for token in string.split():
-        if token == '+':
+        try:
+            stack.append(int(token))
+
+        except ValueError:
             arg2 = stack.pop()
             arg1 = stack.pop()
-            result = arg1 + arg2
-            stack.append(result)
-        elif token == '-':
-            arg2 = stack.pop()
-            arg1 = stack.pop()
-            result = arg1 - arg2
+            function = ops[token]
+            result = function(arg1,arg2)
             stack.append(result)
 
-        else:
-            stack.append(int(token))
-        
     return stack.pop()
     
 
