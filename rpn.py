@@ -2,6 +2,8 @@ import operator
 
 ops = {
         '+': operator.add,
+        'x': operator.mul,
+        '/': operator.div,
         '-': operator.sub,
         '^': operator.pow
     }
