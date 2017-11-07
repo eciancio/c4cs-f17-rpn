@@ -22,11 +22,14 @@ def calculate(string):
     return stack.pop()
     
 
-
+def no_calculations(string):
+    print string
 
 def main():
     while True:
         calculate(input("rpn calc> "))
+        
+        
 
 if __name__=='__main__':
     main()
