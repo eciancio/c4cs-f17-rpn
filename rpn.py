@@ -1,3 +1,4 @@
+import colorama
 import operator
 
 ops = {
@@ -27,7 +28,16 @@ def no_calculations(string):
 
 def main():
     while True:
-        calculate(input("rpn calc> "))
+        answer = calculate(input("rpn calc> "))
+        if (answer < 0) : 
+            print(colorama.Fore.RED + str(answer))
+            print(colorama.Style.RESET_ALL)
+
+        else: 
+            print answer
+
+
+        
         
         
 
