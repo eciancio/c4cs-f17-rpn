@@ -23,7 +23,7 @@ def calculate(string):
     
 
 def no_calculations(string):
-    print string
+    print(string)
 
 def main():
     while True:
