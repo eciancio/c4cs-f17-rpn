@@ -4,6 +4,6 @@ install:
 python:
         - "3.5"
 script: 
-  - coverage run --source=rpn test_rpn.py unittest
+  - coverage run --source=rpn test_rpn.py
 after_success:
   - coveralls
