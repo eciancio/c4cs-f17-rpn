@@ -34,7 +34,7 @@ def main():
             print(colorama.Style.RESET_ALL)
 
         else: 
-            print answer
+            print(answer)
 
 
         
