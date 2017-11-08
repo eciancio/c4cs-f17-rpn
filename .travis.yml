@@ -1,7 +1,7 @@
 language: python
 install:
-        pip install coveralls
-        pip install colorama
+        - pip install coveralls
+        - pip install colorama
 python:
         - "3.5"
 script: 
